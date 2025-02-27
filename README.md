@@ -36,6 +36,12 @@ Take a screenshot of a selected area and automatically extract text to clipboard
 ./scripts/cp-screenshot-text.sh
 ```
 
+## Set script as a shortcut:
+#### Ubuntu 24.04:
+- Open Keyboard Shortcuts Settings (Press Super → Type "Keyboard Shortcuts"):
+- Select "View and Customize Shortcuts" → Press "+"
+- Set name of the shortcut, script path and set shortcut.
+
 ## Installation
 
 1. Ensure you have required dependencies:
