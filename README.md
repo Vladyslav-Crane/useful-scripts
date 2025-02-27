@@ -36,12 +36,6 @@ Take a screenshot of a selected area and automatically extract text to clipboard
 ./scripts/cp-screenshot-text.sh
 ```
 
-## Set script as a shortcut:
-#### Ubuntu 24.04:
-- Open Keyboard Shortcuts Settings (Press Super → Type "Keyboard Shortcuts"):
-- Select "View and Customize Shortcuts" → Press "+"
-- Set name of the shortcut, script path and set shortcut.
-
 ## Installation
 
 1. Ensure you have required dependencies:
@@ -53,3 +47,22 @@ sudo apt install tesseract-ocr xclip wl-clipboard gnome-screenshot
 ```bash
 chmod +x scripts/*.sh
 ```
+3. Optional. Add scripts to ~/bin
+   
+   - Make sure ~/bin exists
+   ```bash
+      mkdir -p ~/bin
+   ```
+   - Update path
+   ```bash
+     if [ -d "$HOME/bin" ] ; then
+          PATH="$HOME/bin:$PATH"
+     fi
+   ```
+   - Copy scripts to ~/bin
+## Set script as a shortcut:
+#### Ubuntu 24.04:
+- Open Keyboard Shortcuts Settings (Press Super → Type "Keyboard Shortcuts"):
+- Select "View and Customize Shortcuts" → Press "+"
+- Set name of the shortcut, script path and set shortcut.
+
