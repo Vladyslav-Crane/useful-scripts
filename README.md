@@ -4,7 +4,7 @@ A collection of useful bash scripts for various automation tasks.
 
 ## Scripts
 
-### cp-image-txt.sh
+### ✅ cp-image-txt.sh
 
 Extract text from images and copy to clipboard.
 
@@ -15,12 +15,12 @@ Extract text from images and copy to clipboard.
 
 **Usage:**
 ```bash
-./cp-image-txt.sh <path_to_image>
+./scripts/cp-image-txt.sh <path_to_image>
 ```
 
 **Example:**
 ```bash
-./cp-image-txt.sh screenshot.png
+./scripts/cp-image-txt.sh screenshot.png
 ```
 
 ## Installation
@@ -34,7 +34,3 @@ sudo apt install tesseract-ocr xclip wl-clipboard
 ```bash
 chmod +x *.sh
 ```
-
-## License
-
-MIT License
