@@ -20,7 +20,7 @@ else
 fi
 
 # Use Tesseract for text recognition and copy to clipboard without creating files
-tesseract "$1" - -l eng 2>/dev/null | $CLIPBOARD_CMD
+tesseract $1 - -l eng 2>/dev/null | $CLIPBOARD_CMD
 
 # Check if operation was successful
 if [ $? -eq 0 ]; then

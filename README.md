@@ -23,14 +23,27 @@ Extract text from images and copy to clipboard.
 ./scripts/cp-image-txt.sh screenshot.png
 ```
 
+### ✅ cp-screenshot-text.sh
+
+Take a screenshot of a selected area and automatically extract text to clipboard.
+
+**Dependencies:**
+- `gnome-screenshot` - for taking screenshots
+- All dependencies from `cp-image-txt.sh`
+
+**Usage:**
+```bash
+./scripts/cp-screenshot-text.sh
+```
+
 ## Installation
 
 1. Ensure you have required dependencies:
 ```bash
-sudo apt install tesseract-ocr xclip wl-clipboard
+sudo apt install tesseract-ocr xclip wl-clipboard gnome-screenshot
 ```
 
 2. Make scripts executable:
 ```bash
-chmod +x *.sh
+chmod +x scripts/*.sh
 ```
